@@ -21,6 +21,8 @@ jobs:
       - name: Fetch Aseprite release link
         id: aseprite-link
         uses: a1393323447/fetch-release@main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
             group: aseprite
             repo: aseprite
